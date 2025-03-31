@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution {
-    public int[] solution(int []arr) {
+    public Stack<Integer>  solution(int []arr) {
         Stack<Integer> s = new Stack<>();
         
         for(int n : arr){
@@ -13,6 +13,6 @@ public class Solution {
             s.push(n);
         }
         
-        return s.stream().mapToInt(i -> i).toArray();
+        return s;
     }
 }
