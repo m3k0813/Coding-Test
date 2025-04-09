@@ -16,4 +16,4 @@ jobs:
           git config --global user.name "m3k0813"
           git config --global user.email "m3k0813@gmail.com"
           git remote add org https://x-access-token:${{ secrets.ORG_REPO_PAT }}@github.com/ALTTOOO/JJM.git
-          git push org main —-force
+          git push org main --force
