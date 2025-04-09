@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  mirror:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: Push to organization repo
+          command: |
+            git config --global user.name "choihooo"
+            git config --global user.email "hochoi8621@naver.com"
+            git remote add org https://x-access-token:${ORG_PUSH_PAT}@github.com/ALTTOOO/CH.git
+            git push org main --force
+
+workflows:
+  version: 2
+  mirror-to-org:
+    jobs:
+      - mirror
