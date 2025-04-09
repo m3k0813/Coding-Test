@@ -9,9 +9,9 @@ jobs:
       - run:
           name: Push to organization repo
           command: |
-            git config --global user.name "choihooo"
-            git config --global user.email "hochoi8621@naver.com"
-            git remote add org https://x-access-token:${ORG_PUSH_PAT}@github.com/ALTTOOO/CH.git
+            git config --global user.name "m3k0813"
+            git config --global user.email "m3k0813@gmail.com"
+            git remote add org https://x-access-token:${ORG_PUSH_PAT}@github.com/ALTTOOO/JJM.git
             git push org main --force
 
 workflows:
